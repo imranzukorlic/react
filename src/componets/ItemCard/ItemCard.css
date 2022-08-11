@@ -1,0 +1,135 @@
+.bige {
+  box-sizing: border-box;
+  height: 234px;
+  width: 814px;
+  margin: 16px 0;
+  padding: 16px;
+  background-color: #ebf3ff;
+  border: solid 1px black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.secondBig {
+  display: flex;
+  flex-direction: row;
+  height: 200;
+  width: 780px;
+}
+.image {
+  height: 200px;
+  width: 200px;
+}
+img {
+  border-radius: 6px;
+  height: 200px;
+  width: 200px;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 564px;
+  height: 200px;
+  margin-left: 16px;
+}
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #0071c2;
+}
+.a {
+  margin: 0;
+  width: 430.9px;
+  height: 28.4px;
+}
+.b {
+  margin: 0;
+  height: 19.6px;
+  width: 430.9px;
+}
+.city {
+  font-size: 12px;
+  color: #0071c2;
+  text-decoration: underline;
+}
+.tacka {
+  font-size: 12px;
+  color: #6b6b6b;
+  margin: 0 5px;
+}
+.distance {
+  font-size: 12px;
+  color: #262626;
+}
+.c {
+  width: 430.9px;
+  height: 23.25px;
+}
+.beach {
+  color: #262626;
+  font-size: 12px;
+}
+.d {
+  width: 430.9px;
+  height: 54px;
+}
+.description {
+  font-size: 12px;
+  color: #262626;
+}
+.aa {
+  display: flex;
+  flex-direction: row;
+}
+/* .stars {
+  /* position: absolute;
+  top: 0px;
+  right: 0px; */
+.stars {
+  margin-top: 10px;
+}
+.how {
+  color: #262626;
+  font-weight: 700;
+  font-size: 16px;
+  height: 16px;
+  width: 69.1px;
+}
+.rec {
+  margin-top: 3px;
+  font-size: 12px;
+  color: #6b6b6b;
+  height: 12px;
+  width: 69.1px;
+}
+.mark {
+  margin-left: 5px;
+  height: 32px;
+  width: 32px;
+  background-color: #003580;
+  color: #ffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-bottom-left-radius: 0px;
+}
+.opet {
+  margin-right: 24px;
+}
+.location {
+  margin-top: 10px;
+  color: #0071c2;
+  font-size: 14px;
+  font-weight: 700;
+  float: right;
+  height: 18px;
+}
+.button {
+  float: right;
+}
