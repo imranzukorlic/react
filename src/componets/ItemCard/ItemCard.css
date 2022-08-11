@@ -4,7 +4,7 @@
   width: 814px;
   margin: 16px 0;
   padding: 16px;
-  background-color: #ebf3ff;
+  background-color: #ffff;
   border: solid 1px black;
   border-radius: 5px;
   display: flex;
@@ -40,6 +40,10 @@ img {
   font-weight: 700;
   text-decoration: none;
   color: #0071c2;
+  transition: 0.3s;
+}
+.name:hover {
+  color: #8e6601;
 }
 .a {
   margin: 0;
@@ -91,23 +95,26 @@ img {
   right: 0px; */
 .stars {
   margin-top: 10px;
+  width: 137px;
 }
 .how {
   color: #262626;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   height: 16px;
-  width: 69.1px;
+  width: 97.1px;
+  text-align: right;
 }
 .rec {
+  text-align: right;
   margin-top: 3px;
   font-size: 12px;
   color: #6b6b6b;
   height: 12px;
-  width: 69.1px;
+  width: 97.1px;
 }
 .mark {
-  margin-left: 5px;
+  margin-left: 3px;
   height: 32px;
   width: 32px;
   background-color: #003580;
@@ -119,9 +126,9 @@ img {
   font-weight: 500;
   border-bottom-left-radius: 0px;
 }
-.opet {
-  margin-right: 24px;
-}
+/* .opet {
+    margin-right: 24px;
+} */
 .location {
   margin-top: 10px;
   color: #0071c2;
@@ -131,5 +138,21 @@ img {
   height: 18px;
 }
 .button {
+  margin-top: 20px;
   float: right;
+  width: 110px;
+  height: 34px;
+}
+button {
+  width: 100%;
+  height: 100%;
+  background-color: #0071c2;
+  border: solid 0px;
+  border-radius: 3px;
+  color: #ffff;
+  font-weight: 600;
+  transition: 00.3s;
+}
+button:hover {
+  background-color: #003580;
 }

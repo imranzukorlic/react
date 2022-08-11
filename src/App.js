@@ -63,7 +63,6 @@ import ItemCard from "./componets/ItemCard/ItemCard";
 const App = () => {
   return (
     <div className="container">
-      <h2>hahahha</h2>
       <ItemCard
         image={
           "https://th.bing.com/th/id/OIP.8eJUCycvfoy-CdojiAEbgQEgDY?w=223&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
@@ -75,6 +74,32 @@ const App = () => {
         recenzije="281"
         mark="9,8"
         location="9,6"
+      />
+      <ItemCard
+        image={
+          "https://cf.bstatic.com/xdata/images/hotel/square600/207121485.webp?k=f3bd2eab72dff90ca14fa5741cf581a4fc3e7003f3beaa0ba5f63475cf1c992c&o=&s=1"
+        }
+        name="Grand Hotel Neum"
+        city="Neum"
+        distance="0,8"
+        description="Objekat Grand Hotel Neum je renoviran 2013. godine i najveći je hotel na neumskoj rivijeri. Ponuda objekta obuhvata bazen na otvorenom i grejani bazen sa morskom vodom u zatvorenom/na otvorenom."
+        recenzije="2 675"
+        mark="8,1"
+        location="8,7"
+      />
+      <ItemCard
+        image={
+          "https://cf.bstatic.com/xdata/images/hotel/square600/301241299.webp?k=266cd60d23dc30576cbe365f346a82958173234f6c0aa4340ba44fc1bbbcf112&o=&s=1"
+        }
+        name="Marea Hotel & Spa"
+        city={"Neum"}
+        distance="0,6"
+        description={
+          "Marea Hotel & Spa je objekat sa impresivnim panoramskim pogledom na more, u kojem gosti mogu da uživaju u moderno opremljenim sobama i suite jedinicama ili u baru u foajeu uz omiljeni koktel i ukusnu..."
+        }
+        recenzije="591"
+        mark={"9,2"}
+        location="8,9"
       />
     </div>
   );
