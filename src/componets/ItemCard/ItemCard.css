@@ -11,6 +11,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
+}
+.bige:hover {
+  background-color: #ebf3ff;
 }
 .secondBig {
   display: flex;

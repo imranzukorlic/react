@@ -55,7 +55,6 @@ const ItemCard = ({
           </div>
         </div>
       </div>
-      ;
     </>
   );
 };
