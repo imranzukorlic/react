@@ -2,6 +2,7 @@ import React from "react";
 import "./ItemCard.css";
 
 const ItemCard = ({
+  beast,
   image,
   name,
   city,
@@ -13,7 +14,7 @@ const ItemCard = ({
 }) => {
   return (
     <>
-      <div className="bige">
+      <div className={beast ? "beast" : "bige"}>
         <div className="secondBig">
           <div className="image">
             <img src={image} alt="slika" />
@@ -50,6 +51,7 @@ const ItemCard = ({
               <div className="location">Lokacija {location}</div>
               <div className="button">
                 <button type="button">Prikazi cenu</button>
+                <h3>{beast ? "NAJBOLJA PONUDA" : ""}</h3>
               </div>
             </div>
           </div>

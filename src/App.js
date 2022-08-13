@@ -135,8 +135,21 @@ const Hotels = [
     description:
       "Marea Hotel & Spa je objekat sa impresivnim panoramskim pogledom na more, u kojem gosti mogu da uživaju u moderno opremljenim sobama i suite jedinicama ili u baru u foajeu uz omiljeni koktel i ukusnu...",
     recenzije: 591,
-    mark: 9.2,
+    mark: 7.7,
     location: 8.9,
+  },
+  {
+    image:
+      "https://cf.bstatic.com/xdata/images/hotel/square600/301241299.webp?k=266cd60d23dc30576cbe365f346a82958173234f6c0aa4340ba44fc1bbbcf112&o=&s=1",
+    name: "Marea Hotel & Spa",
+    city: "Neum",
+    distance: 0.6,
+    description:
+      "Marea Hotel & Spa je objekat sa impresivnim panoramskim pogledom na more, u kojem gosti mogu da uživaju u moderno opremljenim sobama i suite jedinicama ili u baru u foajeu uz omiljeni koktel i ukusnu...",
+    recenzije: 591,
+    mark: 9.6,
+    location: 8.9,
+    beast: true,
   },
   {
     image:
@@ -159,13 +172,49 @@ const Hotels = [
     description:
       "Marea Hotel & Spa je objekat sa impresivnim panoramskim pogledom na more, u kojem gosti mogu da uživaju u moderno opremljenim sobama i suite jedinicama ili u baru u foajeu uz omiljeni koktel i ukusnu...",
     recenzije: 591,
-    mark: 9.2,
+    mark: 6.9,
+    location: 8.9,
+  },
+  {
+    image:
+      "https://cf.bstatic.com/xdata/images/hotel/square600/301241299.webp?k=266cd60d23dc30576cbe365f346a82958173234f6c0aa4340ba44fc1bbbcf112&o=&s=1",
+    name: "Marea Hotel & Spa",
+    city: "Neum",
+    distance: 0.6,
+    description:
+      "Marea Hotel & Spa je objekat sa impresivnim panoramskim pogledom na more, u kojem gosti mogu da uživaju u moderno opremljenim sobama i suite jedinicama ili u baru u foajeu uz omiljeni koktel i ukusnu...",
+    recenzije: 591,
+    mark: 7.3,
+    location: 8.9,
+  },
+  {
+    image:
+      "https://cf.bstatic.com/xdata/images/hotel/square600/301241299.webp?k=266cd60d23dc30576cbe365f346a82958173234f6c0aa4340ba44fc1bbbcf112&o=&s=1",
+    name: "Marea Hotel & Spa",
+    city: "Neum",
+    distance: 0.6,
+    description:
+      "Marea Hotel & Spa je objekat sa impresivnim panoramskim pogledom na more, u kojem gosti mogu da uživaju u moderno opremljenim sobama i suite jedinicama ili u baru u foajeu uz omiljeni koktel i ukusnu...",
+    recenzije: 591,
+    mark: 8.2,
+    location: 8.9,
+  },
+  {
+    image:
+      "https://cf.bstatic.com/xdata/images/hotel/square600/301241299.webp?k=266cd60d23dc30576cbe365f346a82958173234f6c0aa4340ba44fc1bbbcf112&o=&s=1",
+    name: "Marea Hotel & Spa",
+    city: "Neum",
+    distance: 0.6,
+    description:
+      "Marea Hotel & Spa je objekat sa impresivnim panoramskim pogledom na more, u kojem gosti mogu da uživaju u moderno opremljenim sobama i suite jedinicama ili u baru u foajeu uz omiljeni koktel i ukusnu...",
+    recenzije: 591,
+    mark: 6.1,
     location: 8.9,
   },
 ];
 
 const App = () => {
-  // const Well = ItemCard.filter((hotel) => hotel.mark > 7);
+  // const GoodHotel = Hotels.filter((hotel) => hotel.mark > 7.5);
   return (
     <div className="card-container">
       {Hotels.map((hotel, index) => (
@@ -179,6 +228,7 @@ const App = () => {
           recenzije={hotel.recenzije}
           mark={hotel.mark}
           location={hotel.location}
+          beast={hotel.beast}
         />
       ))}
     </div>
