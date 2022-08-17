@@ -269,3 +269,8 @@ const App = () => {
   );
 };
 export default App;
+return (
+  <div className="card-container">
+    <Incrementer />
+  </div>
+);

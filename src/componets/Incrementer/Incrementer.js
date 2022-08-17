@@ -1,6 +1,6 @@
 import React from "react";
 const Incrementer = () => {
-  const [value, setValue] = React.useState(-20);
+  const [value, setValue] = React.useState(0);
   const click = () => {
     setValue((prev) => prev + 1);
   };
