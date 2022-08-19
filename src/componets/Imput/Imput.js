@@ -22,23 +22,23 @@ const Imput = () => {
           <input
             type="email"
             value={formValues.email}
+            placeholder="Your Email"
             onChange={(e) =>
               setFormValues((prev) => ({ ...prev, email: e.target.value }))
             }
             required
           />
-          <label>Your Email</label>
         </div>
         <div className="form">
           <input
             type="password"
             value={formValues.password}
+            placeholder="Your password"
             onChange={(e) =>
               setFormValues((prev) => ({ ...prev, password: e.target.value }))
             }
             required
           />
-          <label>Your password</label>
         </div>
         <button className="btn">Submit</button>
         <p className="text">
