@@ -235,37 +235,46 @@
 //   );
 // };
 // export default App;
-const App = () => {
-  const handleClick = () => {
-    setCount((prev) => prev + 1);
-  };
+// const App = () => {
+//   const handleClick = () => {
+//     setCount((prev) => prev + 1);
+//   };
 
-  // const sayHello = (name) => {
-  //   alert(`Hello ${name}`);
-  // };
-  const [count, setCount] = React.useState(0);
-  const [name, setName] = React.useState("JOHN");
-  // let count = 0;
-  return (
-    <div className="card-container">
-      {count}
-      <button onClick={handleClick}>Increase</button>
-      {name}
-      <button onClick={() => setName("IMRAN")}>Mijenja Ime</button>
-      {/* <button onClick={() => sayHello("Johin")}>Click me</button>
+//   // const sayHello = (name) => {
+//   //   alert(`Hello ${name}`);
+//   // };
+//   const [count, setCount] = React.useState(0);
+//   const [name, setName] = React.useState("JOHN");
+//   // let count = 0;
+//   return (
+//     <div className="card-container">
+//       {count}
+//       <button onClick={handleClick}>Increase</button>
+//       {name}
+//       <button onClick={() => setName("IMRAN")}>Mijenja Ime</button>
+{
+  /* <button onClick={() => sayHello("Johin")}>Click me</button>
         <button
           onClick={() => {
             sayHello("Rick");
             console.log("nije definisana funkcija");
           }}
         >
-          Inline anonimna onClick function */}
-      {/* </button> */}
-      {/* <hr />
-        <Greeting name="Imran" handleaParentClick={handleClick} /> */}
-      {/* <Greeting name="Denis" />
-        <Greeting name="Faris" /> */}
-    </div>
+          Inline anonimna onClick function */
+}
+{
+  /* </button> */
+}
+{
+  /* <hr />
+        <Greeting name="Imran" handleaParentClick={handleClick} /> */
+}
+{
+  /* <Greeting name="Denis" />
+        <Greeting name="Faris" /> */
+}
+{
+  /* </div>
   );
 };
 export default App;
@@ -273,7 +282,8 @@ return (
   <div className="card-container">
     <Incrementer />
   </div>
-);
+); */
+}
 // import "./App.css";
 // // import Incrementer from "./componets/Incrementer/Incrementer";
 
@@ -353,7 +363,7 @@ return (
 // };
 // export default App;
 // //event.target.value
-import Imput from "./componets/Imput/Imput";
+//import Imput from "./componets/Imput/Imput";
 //  // 1.
 // const generateNewWord = () => Math.random().toString(36).slice(2, 7);
 // const reverseArray = () => {
@@ -376,3 +386,42 @@ import Imput from "./componets/Imput/Imput";
         ))}
       </ul> */
 }
+// import "./App.css";
+// import React from "react";
+// import Team from "./componets/TeamCard/TeamCard";
+// const favoriteTeams = [
+//   { id: 0, name: "arsenal", points: 6 },
+//   { id: 1, name: "Man. City", points: 6 },
+//   { id: 2, name: "Liverpul", points: 2 },
+//   { id: 3, name: "Pazar", points: 9 },
+//   { id: 4, name: "Partizan", points: 5 },
+// ];
+// const App = () => {
+//   const [teams, setTeams] = React.useState(favoriteTeams);
+//   const deleteTeam = (id) => {
+//     const newTeams = teams.filter((team) => team.id != id);
+//     setTeams(newTeams);
+//   };
+
+//   return (
+//     <div className="card-container">
+//       <button
+//         onClick={() =>
+//           setTeams((prev) => [...prev, { name: "Chelsi", id: 5, points: 12 }])
+//         }
+//       >
+//         Dodaj novi tim
+//       </button>
+//       {teams.map((team) => (
+//         <div key={team.id}>
+//           <Team
+//             name={team.name}
+//             points={team.points}
+//             onDeleteTeam={() => deleteTeam(team.id)}
+//           />
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+// // export default App;
