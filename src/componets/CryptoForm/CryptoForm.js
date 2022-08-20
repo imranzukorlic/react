@@ -1,9 +1,8 @@
 import React from "react";
-const CryptoForm = ({ nameCoin, price }) => {
+import CriptoListItem from "../CriptoListItem/CriptoListItem";
+const CryptoForm = () => {
   const [data, setData] = React.useState([]);
-  console.log(data);
   const [forms, setForms] = React.useState({ nameCoin: "", price: "" });
-  // console.log(forms);
 
   return (
     <>
@@ -32,9 +31,11 @@ const CryptoForm = ({ nameCoin, price }) => {
         <ul>
           {data.map((coin) => {
             return (
-              <li>
-                <p>{coin.nameCoin}</p> <p>{coin.price}</p>{" "}
-              </li>
+              <CriptoListItem
+                id={coin.price.toString()}
+                nameCoin={coin.nameCoin}
+                price={coin.price}
+              />
             );
           })}
         </ul>
