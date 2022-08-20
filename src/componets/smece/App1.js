@@ -252,8 +252,8 @@
 //       <button onClick={handleClick}>Increase</button>
 //       {name}
 //       <button onClick={() => setName("IMRAN")}>Mijenja Ime</button>
-{
-  /* <button onClick={() => sayHello("Johin")}>Click me</button>
+// {
+/* <button onClick={() => sayHello("Johin")}>Click me</button>
         <button
           onClick={() => {
             sayHello("Rick");
@@ -261,20 +261,20 @@
           }}
         >
           Inline anonimna onClick function */
-}
-{
-  /* </button> */
-}
-{
-  /* <hr />
+// }
+// {
+/* </button> */
+// }
+// {
+/* <hr />
         <Greeting name="Imran" handleaParentClick={handleClick} /> */
-}
-{
-  /* <Greeting name="Denis" />
+// }
+// {
+/* <Greeting name="Denis" />
         <Greeting name="Faris" /> */
-}
-{
-  /* </div>
+// }
+// {
+/* </div>
   );
 };
 export default App;
@@ -283,7 +283,7 @@ return (
     <Incrementer />
   </div>
 ); */
-}
+// }
 // import "./App.css";
 // // import Incrementer from "./componets/Incrementer/Incrementer";
 
@@ -373,8 +373,8 @@ return (
 //   const reversed = _array.reverse();
 //   setArray(reversed);
 // };
-{
-  /* <button onClick={() => setArray((prev) => [generateNewWord(), ...prev])}>
+// {
+/* <button onClick={() => setArray((prev) => [generateNewWord(), ...prev])}>
         Dodaj recenicu
       </button>
       <button onClick={reverseArray}>REVERSE recenice</button>
@@ -385,7 +385,7 @@ return (
           <li key={el}>{el}</li>
         ))}
       </ul> */
-}
+// }
 // import "./App.css";
 // import React from "react";
 // import Team from "./componets/TeamCard/TeamCard";
