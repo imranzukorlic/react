@@ -1,8 +1,16 @@
 import React from "react";
-import CriptoListItem from "../CriptoListItem/CriptoListItem";
+// import CriptoListItem from "../CriptoListItem/CriptoListItem";
+import CriptoList from "../CryptoList/CriptoList";
 const CryptoForm = () => {
   const [data, setData] = React.useState([]);
-  const [forms, setForms] = React.useState({ nameCoin: "", price: "" });
+  const [forms, setForms] = React.useState({
+    nameCoin: "",
+    price: "",
+  });
+  // const deleteCoin = (index) => {
+  //   const newCoin = data.filter((coin) => coin.index !== index);
+  //   setData(newCoin);
+  // };
 
   return (
     <>
@@ -23,23 +31,28 @@ const CryptoForm = () => {
           }
           required
         ></input>
-        <button onClick={() => setData((i) => [...i, forms])}>
+        <button onClick={(e) => setData((prev) => [...prev, forms])}>
           Add to list
         </button>
       </div>
-      <div className="list">
+      <section>
+        <CriptoList list={data} />
+      </section>
+      {/* <div className="list">
         <ul>
-          {data.map((coin) => {
+          {data.map((coin, index) => {
             return (
               <CriptoListItem
-                id={coin.price.toString()}
+                // deletButton={1}
+                key={index}
+                id={index}
                 nameCoin={coin.nameCoin}
                 price={coin.price}
               />
             );
           })}
         </ul>
-      </div>
+      </div> */}
     </>
   );
 };
