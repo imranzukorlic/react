@@ -1,18 +1,17 @@
 // import CryptoForm from "../CryptoForm/CryptoForm";
 import React from "react";
+import "./CriptoListItem.css";
 
-const CriptoListItem = ({ nameCoin, price, id }) => {
+const CriptoListItem = ({ nameCoin, price, id, delteButton }) => {
   // const deleteCoin = (index) => {
   //   const newCoin = data.filter((coin) => coin.index !== index);
   //   setData(newCoin);
   // };
   return (
-    <div>
-      <li key={id}>
-        <p>{nameCoin}</p>
-        <p>{price}</p>
-      </li>
-      <button>X</button>
+    <div className="one" key={id}>
+      <p>{nameCoin}</p>
+      <p>{price}$</p>
+      <button onClick={delteButton}>X</button>
     </div>
   );
 };
