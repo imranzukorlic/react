@@ -1,22 +1,22 @@
 import CriptoListItem from "../CriptoListItem/CriptoListItem";
 import "./CriptoList.css";
 import React from "react";
-const CriptoList = ({ list }) => {
-  const [data, setData] = React.useState(list);
-  // console.log(list);
-  const deleteTeam = (index) => {
-    const newCoin = data.filter((coin) => coin.id != index);
-    setData(newCoin);
-  };
+const CriptoList = ({ list, deleteFunc }) => {
+  // const [data, setData] = React.useState( list );
+  // console.log(data);
+  // const deleteTeam = (id) => {
+  //   const newCoin = data.filter((coin) => coin.id !== id);
+  //   setData(newCoin);
+  // };
   return (
     <div className="list">
       <ul>
-        {list.map((coin, index) => {
+        {list.map((coin) => {
           return (
             <CriptoListItem
-              delteButton={() => deleteTeam(coin.id)}
+              delteButton={deleteFunc}
               key={coin.id}
-              id={coin.id}
+              // id={coin.id}
               nameCoin={coin.nameCoin}
               price={coin.price}
             />

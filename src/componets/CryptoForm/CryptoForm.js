@@ -10,6 +10,10 @@ const CryptoForm = () => {
     price: "",
     id: "",
   });
+  const deleteTeam = (id) => {
+    const newCoin = data.filter((coin) => coin.id !== id);
+    setData(newCoin);
+  };
   return (
     <>
       <div className="crypto-form">
@@ -44,23 +48,8 @@ const CryptoForm = () => {
         </button>
       </div>
       <div className="cr-list">
-        <CriptoList list={data} />
+        <CriptoList list={data} deleteFunc={() => deleteTeam} />
       </div>
-      {/* <div className="list">
-        <ul>
-          {data.map((coin, index) => {
-            return (
-              <CriptoListItem
-                // deletButton={1}
-                key={index}
-                id={index}
-                nameCoin={coin.nameCoin}
-                price={coin.price}
-              />
-            );
-          })}
-        </ul>
-      </div> */}
     </>
   );
 };

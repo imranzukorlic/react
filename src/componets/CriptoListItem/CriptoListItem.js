@@ -8,7 +8,7 @@ const CriptoListItem = ({ nameCoin, price, id, delteButton }) => {
   //   setData(newCoin);
   // };
   return (
-    <div className="one" key={id}>
+    <div className="one">
       <p>{nameCoin}</p>
       <p>{price}$</p>
       <button onClick={delteButton}>X</button>
