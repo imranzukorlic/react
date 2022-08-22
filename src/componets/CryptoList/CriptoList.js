@@ -3,8 +3,9 @@ import "./CriptoList.css";
 import React from "react";
 const CriptoList = ({ list }) => {
   const [data, setData] = React.useState(list);
+  // console.log(list);
   const deleteTeam = (index) => {
-    const newCoin = data.filter((coin) => coin.index != index);
+    const newCoin = data.filter((coin) => coin.id != index);
     setData(newCoin);
   };
   return (
@@ -13,9 +14,9 @@ const CriptoList = ({ list }) => {
         {list.map((coin, index) => {
           return (
             <CriptoListItem
-              delteButton={() => deleteTeam(index)}
-              key={index}
-              id={index}
+              delteButton={() => deleteTeam(coin.id)}
+              key={coin.id}
+              id={coin.id}
               nameCoin={coin.nameCoin}
               price={coin.price}
             />

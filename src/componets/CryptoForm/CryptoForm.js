@@ -29,6 +29,16 @@ const CryptoForm = () => {
           }
           required
         ></input>
+        <button
+          onClick={() =>
+            setForms((prev) => ({
+              ...prev,
+              id: Math.random().toString(36).slice(2, 7),
+            }))
+          }
+        >
+          Add ID
+        </button>
         <button onClick={() => setData((prev) => [...prev, forms])}>
           Add to list
         </button>

@@ -35,5 +35,5 @@
 .one button:hover {
   background-color: rgb(131, 28, 28);
   border: solid 1px rgb(131, 28, 28);
-  border-radius: 50%;
+  border-radius: 20px;
 }
