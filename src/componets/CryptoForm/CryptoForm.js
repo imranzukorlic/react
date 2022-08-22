@@ -3,14 +3,16 @@ import "./CryptoForm.css";
 // import CriptoListItem from "../CriptoListItem/CriptoListItem";
 import CriptoList from "../CryptoList/CriptoList";
 const CryptoForm = () => {
-  const [data, setData] = React.useState([]);
+  const Listica = [{ nameCoin: "Bitcoin", price: "21,400.00" }];
+  const [data, setData] = React.useState(Listica);
   // console.log(data);
   const [forms, setForms] = React.useState({
     nameCoin: "",
     price: "",
-    id: "",
+    id: 0,
   });
   const deleteTeam = (id) => {
+    // console.log(id);
     const newCoin = data.filter((coin) => coin.id !== id);
     setData(newCoin);
   };
@@ -33,22 +35,25 @@ const CryptoForm = () => {
           }
           required
         ></input>
+
         <button
-          onClick={() =>
-            setForms((prev) => ({
+          onClick={() => {
+            setData((prev) => [
               ...prev,
-              id: Math.random().toString(36).slice(2, 7),
-            }))
-          }
+
+              {
+                nameCoin: forms.nameCoin,
+                price: forms.price,
+                id: Math.random(),
+              },
+            ]);
+          }}
         >
-          Add ID
-        </button>
-        <button onClick={() => setData((prev) => [...prev, forms])}>
           Add to list
         </button>
       </div>
       <div className="cr-list">
-        <CriptoList list={data} deleteFunc={() => deleteTeam} />
+        <CriptoList list={data} deleteFunc={(id) => deleteTeam(id)} />
       </div>
     </>
   );

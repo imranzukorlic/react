@@ -8,15 +8,16 @@ const CriptoList = ({ list, deleteFunc }) => {
   //   const newCoin = data.filter((coin) => coin.id !== id);
   //   setData(newCoin);
   // };
+
   return (
     <div className="list">
       <ul>
         {list.map((coin) => {
           return (
             <CriptoListItem
-              delteButton={deleteFunc}
+              onDeleteButton={(id) => deleteFunc(id)}
               key={coin.id}
-              // id={coin.id}
+              id={coin.id}
               nameCoin={coin.nameCoin}
               price={coin.price}
             />
