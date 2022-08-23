@@ -12,6 +12,10 @@ const CriptoListItem = ({ nameCoin, price, id, onDeleteButton }) => {
   return (
     <>
       <div className="one" key={id}>
+        <img
+          src="https://pngimg.com/uploads/coin/coin_PNG36871.png"
+          alt="Coin"
+        ></img>
         <p>{nameCoin}</p>
         <p>{price}$</p>
         <button className="bot" onClick={() => setShowMore((prev) => !prev)}>
@@ -21,9 +25,10 @@ const CriptoListItem = ({ nameCoin, price, id, onDeleteButton }) => {
         <button onClick={() => onDeleteButton(id)}>X</button>
       </div>
       {showMore && (
-        <div className="one">
+        <div className="two">
           <h4>
-            ovo je {nameCoin}, cijena mu je {price}$
+            Ovo je {nameCoin}, cijena mu je {price}$, kupljen je od strane
+            mnogih, ukupno sadrzi 1233424356546586754$
           </h4>
         </div>
       )}
