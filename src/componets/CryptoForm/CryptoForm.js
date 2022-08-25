@@ -16,6 +16,7 @@ const CryptoForm = () => {
     { id: Math.random(), nameCoin: "Litecoin", price: "56.69" },
   ];
   const [data, setData] = React.useState(Listica);
+  const [showMore, setShowMore] = React.useState(null);
   // console.log(data);
   const [forms, setForms] = React.useState({
     nameCoin: "",
