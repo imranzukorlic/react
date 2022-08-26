@@ -424,4 +424,7 @@ return (
 //     </div>
 //   );
 // };
-// // export default App;
+// // export default App;/* <CryptoForm /> */}
+/* <Weather /> */
+// import Weather from "./componets/Weather/Weather";
+// import CryptoForm from "./componets/CryptoForm/CryptoForm";
