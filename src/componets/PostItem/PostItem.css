@@ -1,0 +1,17 @@
+.post-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-color: white;
+  border: solid 5px black;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.post-item:hover {
+  background-color: black;
+  color: white;
+  width: 95%;
+}
