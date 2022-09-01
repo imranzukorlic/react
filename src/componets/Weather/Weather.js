@@ -33,7 +33,7 @@ const Weather = () => {
         <h1>{value}°C</h1>
         <button onClick={() => getTemp()}>Change Temp</button>
         <div className="card-one">
-          <p>{text}</p>
+          <p>"{text}"</p>
         </div>
       </div>
     </div>
