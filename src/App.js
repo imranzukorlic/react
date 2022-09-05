@@ -25,7 +25,7 @@ const App = () => {
     } catch (e) {
       console.log(e);
     } finally {
-      setLoading(true);
+      setLoading(false);
     }
   }
   React.useEffect(() => {
@@ -36,7 +36,7 @@ const App = () => {
       <button onClick={() => setPage((prev) => prev - 1)}>Back page</button>
       Page {pagination.page} / {pagination.lastPage}
       <button onClick={() => setPage((prev) => prev + 1)}>Next page </button>
-      {loading ? (
+      {!loading ? (
         <div>
           {authors.map((author) => (
             <div key={author._id}>
